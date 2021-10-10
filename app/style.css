@@ -86,6 +86,9 @@ header {
 .cta span {
   font-weight: normal;
 }
+.hero {
+  margin-bottom: 80px;
+}
 .hero-img-wrapper {
   text-align: center;
 }
@@ -112,6 +115,8 @@ header {
   font-weight: bold;
   padding: 18px 24px;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 .btn-wrapper .btn .btn-info {
   font-weight: normal;
@@ -119,6 +124,10 @@ header {
 .btn-primary {
   background-color: var(--accent-color);
   color: #fff;
+}
+.btn-primary:hover {
+  background-color: #3940f3c7;
+  transform: scale(1.05);
 }
 .btn-secondary {
   display: flex;
@@ -144,6 +153,11 @@ header {
   font-weight: bold;
   font-family: var(--heading-family);
 }
+.publications {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 30px;
+}
 @media screen and (min-width: 600px) {
   body {
     padding: 20px;
@@ -167,6 +181,9 @@ header {
   .reviews-wrapper {
     flex-direction: row;
   }
+  .publications {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media screen and (min-width: 1000px) {
   .show-on-desktop {
@@ -177,5 +194,18 @@ header {
   }
   header {
     padding: 40px 130px;
+  }
+  .hero {
+    display: flex;
+  }
+  .hero-img-wrapper {
+    max-width: 450px;
+    order: 2;
+  }
+  .hero-content {
+    max-width: 690px;
+  }
+  .publications {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
