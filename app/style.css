@@ -50,7 +50,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .show-on-desktop {
   display: none;
@@ -91,6 +91,31 @@ header {
 }
 .hero-img-wrapper {
   text-align: center;
+  position: relative;
+}
+.user {
+  position: absolute;
+  background-color: #fff;
+  padding: 18px;
+  border-radius: 5px;
+}
+.user p {
+  margin: 4px;
+}
+.user1 {
+  top: -10%;
+  left: 46%;
+  transform: rotate(-8deg);
+}
+.user2 {
+  top: 20%;
+  transform: rotate(10deg);
+}
+.user3 {
+  left: 46%;
+  top: 40%;
+  width: 150px;
+  transform: rotate(-10deg);
 }
 .hero__title {
   font-size: var(--text-md);
@@ -184,6 +209,18 @@ header {
   .publications {
     grid-template-columns: repeat(3, 1fr);
   }
+  .user1 {
+    top: 0;
+    left: 46%;
+  }
+  .user2 {
+    top: 30%;
+    left: 10%;
+  }
+  .user3 {
+    left: 60%;
+    top: 55%;
+  }
 }
 @media screen and (min-width: 1000px) {
   .show-on-desktop {
@@ -195,15 +232,18 @@ header {
   header {
     padding: 40px 130px;
   }
+}
+
+@media screen and (min-width: 1200px) {
   .hero {
     display: flex;
   }
   .hero-img-wrapper {
-    max-width: 450px;
+    max-width: 40%;
     order: 2;
   }
   .hero-content {
-    max-width: 690px;
+    max-width: 60%;
   }
   .publications {
     grid-template-columns: repeat(6, 1fr);
