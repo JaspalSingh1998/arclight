@@ -1,5 +1,12 @@
 :root {
-  --background: red;
+  --heading-family: "Bitter", serif;
+  --text-family: "Merriweather", serif;
+  --text-lg: 3.5rem;
+  --text-md: 2.25rem;
+  --text-sm: 1.125rem;
+  --grey: #595959;
+  --off-white: #e7e8fe;
+  --accent-color: #242dfe;
 }
 *,
 *::before,
@@ -23,5 +30,6 @@ a {
   text-decoration: none;
 }
 body {
-  background-color: var(--background);
+  font-size: var(--text-sm);
+  background-color: var(--accent-color);
 }
