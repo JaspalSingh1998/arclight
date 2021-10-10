@@ -93,6 +93,9 @@ header {
   text-align: center;
   position: relative;
 }
+.country img {
+  width: 15px;
+}
 .user {
   position: absolute;
   background-color: #fff;
@@ -214,7 +217,7 @@ header {
     left: 46%;
   }
   .user2 {
-    top: 30%;
+    top: 32%;
     left: 10%;
   }
   .user3 {
