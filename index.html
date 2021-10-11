@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./Assets/Logo.svg" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +19,7 @@
   <body>
     <div class="container">
       <header>
-        <nav class="top-navbar">
+        <nav class="top-navbar" data-aos="fade-down">
           <img src="./Assets/Logo.svg" alt="Arclight Logo" />
           <ul class="show-on-desktop">
             <a href="#" class="nav-item">Pricing</a>
@@ -34,7 +36,7 @@
           </button>
         </nav>
         <section class="hero">
-          <div class="hero-img-wrapper">
+          <div class="hero-img-wrapper" data-aos="fade-left">
             <img src="./Assets/Map.svg" alt="Hero Image" class="hero-img" />
             <div class="user user1">
               <img src="./Assets/user02.svg" alt="Sara" />
@@ -54,7 +56,7 @@
               </p>
             </div>
           </div>
-          <div class="hero-content">
+          <div class="hero-content" data-aos="fade-right">
             <h1 class="hero__title">
               Affiliate tracking software shouldn’t cost an arm and a leg.
             </h1>
@@ -85,7 +87,7 @@
             </div>
           </div>
         </section>
-        <section class="publications">
+        <section class="publications" data-aos="fade-up">
           <img src="./Assets/Shopify.svg" alt="Shopify" />
           <img src="./Assets/Paypal.svg" alt="Paypal" />
           <img src="./Assets/Samsung.svg" alt="Samsung" />
@@ -95,7 +97,7 @@
         </section>
       </header>
       <section class="features">
-        <div class="features__content">
+        <div class="features__content" data-aos="zoom-in-down">
           <h2 class="features__title">
             A powerful dashboard that tracks everything.
           </h2>
@@ -122,11 +124,17 @@
           src="./Assets/Dashboard.png"
           alt="Dashboard"
           class="feature__img"
+          data-aos="zoom-in-up"
         />
       </section>
       <section class="section-cta">
         <div class="plans-for">
-          <div class="plan-card">
+          <div
+            class="plan-card"
+            data-aos="flip-right"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             <h2 class="plan__title">For Startups</h2>
             <p class="plan__desc">
               Not all companies are big, startups should have just as much
@@ -148,7 +156,12 @@
               </li>
             </ul>
           </div>
-          <div class="plan-card">
+          <div
+            class="plan-card"
+            data-aos="flip-left"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             <h2 class="plan__title">For Enterprises</h2>
             <p class="plan__desc">
               Just because your company is huge, doesn’t mean you shouldn’t
@@ -170,7 +183,12 @@
             </ul>
           </div>
         </div>
-        <div class="pricings">
+        <div
+          class="pricings"
+          data-aos="zoom-out-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <div class="pricing__card">
             <h4 class="pricing__type">Basic</h4>
             <h2 class="price">$39<span>/mo</span></h2>
@@ -294,5 +312,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./app/app.js"></script>
   </body>
 </html>
