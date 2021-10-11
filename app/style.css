@@ -310,6 +310,9 @@ header {
   header {
     padding: 40px 130px;
   }
+  .plans-for {
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1200px) {
