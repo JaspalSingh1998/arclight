@@ -218,8 +218,9 @@ header {
   margin-bottom: 1rem;
 }
 .feature__item img {
-  height: 28px;
-  width: 28px;
+  width: 18px;
+  height: 18px;
+  margin-top: 0;
 }
 .section-cta {
   background-color: #fff;
@@ -229,6 +230,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 80px;
 }
 .plan-card {
   background-color: var(--accent-color);
@@ -257,9 +259,73 @@ header {
   margin-bottom: 1rem;
 }
 .plan img {
-  height: 28px;
-  width: 28px;
-  margin-top: -6px;
+  width: 18px;
+  height: 18px;
+  margin-top: 0;
+}
+.pricing__card {
+  padding: 36px;
+}
+.pricing__type {
+  font-family: var(--text-family);
+  color: var(--grey);
+  font-weight: normal;
+}
+.price {
+  font-size: var(--text-lg);
+  color: var(--grey);
+  line-height: 0.7;
+  margin-bottom: 12px;
+}
+.price span {
+  font-size: 18px;
+  font-family: var(--heading-family);
+  font-weight: normal;
+  color: #9fa5b6;
+}
+.pricing__desc {
+  font-family: var(--text-family);
+  color: var(--grey);
+  margin-bottom: 24px;
+}
+.pricing__card .plan {
+  color: var(--grey);
+}
+.subscribe {
+  background-color: var(--accent-color);
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-family: var(--heading-family);
+  font-weight: bold;
+  padding: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.subscribe:hover {
+  background-color: #373cc9cb;
+  transform: scale(1.05);
+}
+.pricing__primary {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+}
+.pricing__primary .pricing__type,
+.pricing__primary .price,
+.pricing__primary .price span,
+.pricing__primary .pricing__desc,
+.pricing__primary .plan {
+  color: #fff;
+}
+.subscribe__primary {
+  color: var(--accent-color);
+  background-color: #e7e8fe;
+}
+.subscribe__primary:hover {
+  transform: scale(1.05);
+  background-color: #d5d6dbc5;
 }
 @media screen and (min-width: 600px) {
   body {
@@ -299,6 +365,14 @@ header {
     left: 60%;
     top: 55%;
   }
+  .pricings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pricing__primary {
+    order: 3;
+    grid-column: 1/-1;
+  }
 }
 @media screen and (min-width: 1000px) {
   .show-on-desktop {
@@ -312,6 +386,17 @@ header {
   }
   .plans-for {
     flex-direction: row;
+  }
+  .pricings {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .pricing__card.pro {
+    grid-column: 3/4;
+  }
+  .pricing__primary {
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 }
 
