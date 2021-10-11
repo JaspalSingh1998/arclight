@@ -221,6 +221,46 @@ header {
   height: 28px;
   width: 28px;
 }
+.section-cta {
+  background-color: #fff;
+  padding: 80px 30px;
+}
+.plans-for {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.plan-card {
+  background-color: var(--accent-color);
+  padding: 24px;
+  color: #fff;
+}
+.plan__title {
+  font-size: var(--text-md);
+  line-height: 1;
+  margin-bottom: 8px;
+  font-family: var(--heading-family);
+}
+.plan__desc {
+  margin: 0;
+  font-family: var(--text-family);
+  color: var(--off-white);
+  line-height: 150%;
+  margin-bottom: 36px;
+}
+.plan__list {
+  padding-left: 0;
+}
+.plan {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.plan img {
+  height: 28px;
+  width: 28px;
+  margin-top: -6px;
+}
 @media screen and (min-width: 600px) {
   body {
     padding: 20px;
