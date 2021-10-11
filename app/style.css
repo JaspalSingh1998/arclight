@@ -327,6 +327,33 @@ header {
   transform: scale(1.05);
   background-color: #d5d6dbc5;
 }
+footer {
+  padding-top: 80px;
+  color: var(--off-white);
+  font-family: var(--text-family);
+  font-weight: normal;
+  display: grid;
+  gap: 56px;
+}
+footer .logo {
+  margin-bottom: 26px;
+}
+.footer__item-title {
+  margin-bottom: 24px;
+  font-family: var(--heading-family);
+}
+.footer-nav {
+  display: grid;
+  gap: 55px;
+}
+footer ul {
+  padding-left: 0;
+  display: grid;
+  gap: 12px;
+}
+footer ul li {
+  font-weight: 400;
+}
 @media screen and (min-width: 600px) {
   body {
     padding: 20px;
@@ -372,6 +399,9 @@ header {
   .pricing__primary {
     order: 3;
     grid-column: 1/-1;
+  }
+  .footer-nav {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media screen and (min-width: 1000px) {
@@ -423,5 +453,9 @@ header {
   }
   .feature__img {
     margin-top: 24px;
+  }
+  footer {
+    grid-template-columns: 429px 624px;
+    justify-content: center;
   }
 }
